@@ -10,10 +10,10 @@
 
 ## Tech stack
 
-| Frontend     | API     | Backend  |
-| ------------ | ------- | -------- |
-| React Native | Axios   | Firebase |
-| Redux        | Express |          |
+| Frontend     | API     | Backend    |
+| ------------ | ------- | ---------- |
+| React Native | Axios   | Firebase   |
+| Redux        | Express | MongoDB(?) |
 
 # Active Database
 
@@ -148,6 +148,17 @@ Reply
   - Or, the submission ID is stored in the array for certain amount of time and counted towards the submissions that aren't shown to the user. After so long the whole array is emptied and filled up again by the user.
   - Expanding on this, a submission that has been skipped 3 times could be added to a permanently skipped array and never shown to the user.
   - If however, the ID is in a users skipped array when the data is locked in, they become a part of the calculated percentage who could have but did not respond to the submission, which would be displayed on the communal screen.
+
+- If a majority of users skip a submission, this means the submission is not interesting and can be removed from the pool of submissions.
+
+## Social screens
+
+- Sections to have:
+  - Most agreed
+  - Most disagreed
+  - Split decisions
+  - Almost ready to reveal
+- Once posts are live and the results are shown to the user, a chat thread opens below each post where users can discuss the results.
 
 # Static Database
 
